@@ -5,11 +5,11 @@ export const diskImageType = "cloud";
 // Print an introduction message about the technology
 export const printIntro = true;
 // Is a graphical display needed
-export const needsDisplay = false;
+export const needsDisplay = true;
 // Executable full path (Required)
-export const cmd = "/bin/bash";
+export const cmd = "/usr/bin/chromium";
 // Arguments, as an array (Required)
-export const args = ["--login"];
+export const args = ["--no-sandbox", "--disable-gpu", "https://google.com"];
 // Optional extra parameters
 export const opts = {
 	// Environment variables
